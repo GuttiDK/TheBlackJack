@@ -32,7 +32,7 @@ Last updated: 29-09-2023
 
 # Updates
 
-**Version 0.0.1** (21/09/2023) - Current version
+**Version 0.0.1** (29/09/2023) - Current version
 - Initial pre-release of BlackJack Application.
 - Features include some of the Front-end and backend.
 
