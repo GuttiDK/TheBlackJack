@@ -1,12 +1,20 @@
 let bunke = preGameSettings();
 let deckSize = bunke.length;
 
+function newGame() {
+    if (bunke.length == 0)
+    {
+    bunke = preGameSettings();
+    deckSize = bunke.length;
+    }
+}
+
 function preGameSettings() {
 
 class Card {
-    constructor(suit, value) {
-        this.suit = suit;
-        this.value = value;
+    constructor(kulør, værdi) {
+        this.kulør = kulør;
+        this.værdi = værdi;
     }
 }
 
@@ -26,12 +34,17 @@ function lavBunke(){
 return lavBunke();
 }
 
-function næsteKort(){
+
+
+function naesteKort(){
     let i = Math.floor(Math.random() * bunke.length);
-    return bunke.splice(i, 1);
+    let Card = bunke.splice(i, 1)[0];
+    if (bunke.length == 0) {
+        console.log("Bunken er tom");
+    }
+    else {
+        console.log(Card.kulør + " " + Card.værdi + " " + bunke.length + " kort tilbage");
+    }
+
 }
 
-for (let i = 0; i < deckSize; i++) {
-    let Card = næsteKort()[0];
-    console.log(Card.kulør, Card.værdi);
-}
