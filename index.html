@@ -1,35 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>BlackJack</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="index.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>BlackJack</h1>
-           </div>
-        <div class="game">
-            <div class="player">
-                <h2>Player</h2>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Black Jack</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>   
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row mt-3">
+            <div class="col text-center">
+                <img src="Pictures/Logo/BlackJack.png">
+                <h1>Black Jack</h1>
+            </div> 
+        <div id="btnStart" class="row mt-3">
+            <hr>
+            <div class="col text-center">
+                <button class="btn btn-secondary" id="btnStart" onclick="NewGame()">Start Game</button>
+            </div>   
+        </div>
+        </div>
+        <hr>
+        <div class="gameBox" id="gameForm">
+        <div class="row mt-3">
+            <div class="col-6 text-center">
+                <h5 class="points" id="playerInfo">Player points: 0</h5>
             </div>
-            <div class="dealer">
-                <h2>Dealer</h2>
+            <div class="col-6 text-center">
+                <h5 class="points" id="dealerInfo">Dealer points: 0</h5>
             </div>
-            <div class="content">
-                <div class="right">
-                    <div class="buttons">
-                        <button class="newGame" onclick="newGame()">New Game</button>
-                        <button class="hit" onclick="naesteKort()">Hit</button>
-                        <button class="stand">Stand</button>
-                        <button class="deal">Deal</button>
-                    </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <button class="btn btn-secondary" id="btnDraw" onclick="PrintDrawedCardPlayer()">Draw</button>
+                    <button class="btn btn-secondary" id="btnStay" onclick="DealerAutoDrawCard()">Stay</button>
                 </div>
             </div>
-            <div class="footer">
-                <h3>Created by: <a>Christian C. Høttges</a></h3>
+            <div class="row">
+                <div class="col text-center resultBox" id="resultFrom" hidden>
+                    <h5 class="points" id="result"></h5>
+                    <button class="btn btn-secondary" onclick="StartNewGame()">New Game</button>
+                </div>
+            </div>
         </div>
-    </body>
+        <hr>
+
+        <div class="row">
+            <div class="column" class="table table-striped">
+              <table class="table table-striped" id="playerHand">
+                <thead>
+                  <th>Player Hand</th>
+                </thead>
+                <tbody class="table table-striped">
+                    <tr>
+                        <td id="playerCard1">Empty</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="column" class="table table-striped">
+              <table class="table table-striped" id="dealerHand">
+                <thead>
+                  <th>Dealer Hand</th>
+                </thead>
+                <tbody class="table table-striped">
+                    <tr>
+                        <td id="dealerCard1">Empty</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+    </div>
+    </div>
+</body>
+<script src='script.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </html>
