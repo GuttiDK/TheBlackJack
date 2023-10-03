@@ -7,7 +7,7 @@ Blackjack is a card game with deck of 52 cards. player and dealer draw two cards
 ## The Maker
 Made by Christian C. Høttges
 
-Last updated: 29-09-2023
+Last updated: 02-10-2023
 
 # How to Use
 
@@ -26,21 +26,29 @@ Last updated: 29-09-2023
 * <a href="https://www.w3schools.com/css/" target="_blank">CSS</a>
 
 # Features
-- Player can draw a card.
-- Player can see the cards.
-- Some of the backend and front is done.
+- Player can draw a card or stand.
+- Player can see the player and dealer points and the card that is drawed.
+- Player can play with the "dealer".
+- Player can see the "dealer" first card and has a hidden card.
+- The backend and front is done.
 
 # Updates
 
-**Version 0.0.1** (29/09/2023) - Current version
+**Version 1.0.0** (02/10/2023) - Current version
+- Pre-release of BlackJack Application.
+- Features include the Front-end and backend.
+- Player can draw a card or stand and can play with the "dealer".
+
+
+**Version 0.0.1** (29/09/2023)
 - Initial pre-release of BlackJack Application.
 - Features include some of the Front-end and backend.
 
 ## In progress
-- Backend of the application.
-- Frontend of the application.
+- Betting system.
 
 ## Tags
+- <a href="https://github.com/GuttiDK/JavaScriptGym/releases/tag/version-1.0.0">Pre-release - v1.0.0</a>
 - <a href="https://github.com/GuttiDK/JavaScriptGym/releases/tag/version-0.0.1">Structure - v0.0.1</a>
 
 # Bugs & Known Bugs and Bug Reporting
