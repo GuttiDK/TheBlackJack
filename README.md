@@ -48,7 +48,8 @@ Last updated: 02-10-2023
 - Betting system.
 
 ## Tags
-- <a href="https://github.com/GuttiDK/TheTodoRazerApp/releases/tag/version-0.0.1">Structure - v0.0.1</a>
+- <a href="https://github.com/GuttiDK/JavaScriptGym/releases/tag/version-1.0.0">Pre-release - v1.0.0</a>
+- <a href="https://github.com/GuttiDK/JavaScriptGym/releases/tag/version-0.0.1">Structure - v0.0.1</a>
 
 # Bugs & Known Bugs and Bug Reporting
 We are constantly working to improve this application. If you encounter any bugs or errors, please report them to us.
