@@ -81,7 +81,7 @@ function PointResult(array)
 
 
 // Add 2 cards to dealerHand first card as hidden card, second as start card and only add the start card as point and then set all points for dealer 
-function PrintDealerStartHand()
+function DealerStartHand()
 {
     AddCardToHand(dealerHand);
     AddCardToHand(dealerHand);
@@ -149,7 +149,7 @@ function ShowDealerHiddenCard()
 
 
 // Draw card for player and print it if game is started and player points is under 21
-function PrintDrawedCardPlayer()
+function DrawedCardPlayer()
 {
     if(document.getElementById("btnStart") === null)
     if(playerPoint < 22){
@@ -205,7 +205,7 @@ function NewGame()
     document.getElementById("dealerHand").deleteRow(1);
     document.getElementById("playerHand").deleteRow(1);
     ShuffleDeck();
-    PrintDealerStartHand();
-    PrintDrawedCardPlayer();
-    PrintDrawedCardPlayer();  
+    DealerStartHand();
+    DrawedCardPlayer();
+    DrawedCardPlayer();  
 }

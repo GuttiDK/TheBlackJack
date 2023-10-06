@@ -34,7 +34,11 @@ Last updated: 02-10-2023
 
 # Updates
 
-**Version 1.0.0** (02/10/2023) - Current version
+**Hotfix Version 1.0.1** (06/10/2023) - Current version
+- Hotfix of BlackJack Application.
+- Hotfix include some update of the Front-end and backend to make more clean to play.
+
+**Version 1.0.0** (02/10/2023)
 - Pre-release of BlackJack Application.
 - Features include the Front-end and backend.
 - Player can draw a card or stand and can play with the "dealer".
