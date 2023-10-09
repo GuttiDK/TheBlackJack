@@ -70,10 +70,8 @@ function PointResult(array)
                 points += 10
             }
         });
-        return points;
     }
-    else
-        return points;
+    return points;
 }
 
 
