@@ -7,7 +7,7 @@ Blackjack is a card game with deck of 52 cards. player and dealer draw two cards
 ## The Maker
 Made by Christian C. Høttges
 
-Last updated: 02-10-2023
+Last updated: 06-10-2023
 
 # How to Use
 
